@@ -1,25 +1,137 @@
-<<<<<<< HEAD
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# AI Loan Management Agent
 
-# Run and deploy your AI Studio app
+## 📌 Project Overview
 
-This contains everything you need to run your app locally.
+AI Loan Management Agent is a web-based application that simplifies the loan application and management process using Artificial Intelligence. The system enables users to apply for loans, calculate EMI, track loan status, and interact with an AI-powered chatbot for loan-related assistance.
 
-View your app in AI Studio: https://ai.studio/apps/55489a6c-337e-469b-b409-dfebe53b9977
+---
 
-## Run Locally
+## 🚀 Features
 
-**Prerequisites:**  Node.js
+* 👤 User Registration & Login
+* 📝 Online Loan Application
+* 🤖 AI-powered Loan Assistant
+* 💰 EMI Calculator
+* 📊 Loan Status Tracking
+* 👨‍💼 Admin Dashboard
+* 📄 AI Report Generation
+* 🗄️ Database Integration using Drizzle ORM
+* ⚡ Fast and Responsive User Interface
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-=======
-# AI-Loan-Management-Agent
-An AI-powered Loan Management Agent that analyzes loan applications, generates underwriting reports, calculates eligibility scores, recommends suitable banks, estimates EMI, and provides an admin dashboard for loan approval and rejection.
->>>>>>> 74f80c0961c78b80b5e702500881cae6ee423bfc
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React 19
+* TypeScript
+* Vite
+* CSS
+
+### Backend
+
+* Node.js
+* Express.js
+* TypeScript
+
+### Database
+
+* PostgreSQL
+* SQLite (Development)
+* Drizzle ORM
+
+### AI
+
+* Google GenAI API
+
+---
+
+## 📂 Project Structure
+
+```
+AI-Loan-Management-Agent
+│
+├── src/
+│   ├── components/
+│   ├── db/
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── data/
+├── server.ts
+├── package.json
+├── vite.config.ts
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Thanishqka/AI-Loan-Management-Agent.git
+```
+
+Go to the project folder
+
+```bash
+cd AI-Loan-Management-Agent
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create a `.env` file and add your API keys.
+
+Run the project
+
+```bash
+npm run dev
+```
+
+---
+
+## 📷 Screenshots
+
+Add screenshots of:
+
+* Home Page
+* Login Page
+* Registration Page
+* Loan Application
+* Dashboard
+* Admin Dashboard
+* AI Chatbot
+
+---
+
+## 📈 Future Enhancements
+
+* Credit Score Prediction
+* Loan Approval Prediction using Machine Learning
+* Email Notifications
+* SMS Notifications
+* Document Verification
+* Payment Gateway Integration
+
+---
+
+## 👨‍💻 Developed By
+
+**Arul A**
+
+B.E. Electronics and Communication Engineering (ECE)
+
+VSB Engineering College
+
+---
+
+## 📄 License
+
+This project is developed for learning and educational purposes.
