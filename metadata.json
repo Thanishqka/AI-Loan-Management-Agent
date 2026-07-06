@@ -1,0 +1,8 @@
+{
+  "name": "AI- Loan Management Agent",
+  "description": "An AI-powered digital loan officer MVP offering user-friendly applications, real-time Gemini AI risk and fraud reports, a financial advisor chatbot, and an admin management dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
