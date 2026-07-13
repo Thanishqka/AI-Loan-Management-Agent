@@ -574,20 +574,27 @@ Keep the response professional, concise, and in exactly this labeled format with
       let generatedReport: any = null;
 
       if (ai) {
-        try {
-          console.log(`[Gemini API] Requesting AI Loan Officer assessment for ${newLoan.id}...`);
-          const response = await ai.models.generateContent({
-            model: 'gemini-3.5-flash',
-            contents: prompt,
-          });
+  try {
+    const response = await ai.models.generateContent({
+      model: "gemini-2.5-flash",
+      contents: chatPrompt,
+    });
 
-          const textOutput = response.text || '';
-          console.log(`[Gemini API] Successful response for ${newLoan.id}. Output:\n${textOutput}`);
-          generatedReport = parseGeminiResponse(textOutput, newLoan.id);
-        } catch (err) {
-          console.error(`[Gemini API] Failed/timed out for ${newLoan.id}. Falling back to friendly safe state.`, err);
-        }
-      }
+    const textOutput = response.text || "";
+
+    console.log(
+      `[Gemini API] Successful response for ${newLoan.id}. Output:\n${textOutput}`
+    );
+
+    generatedReport = parseGeminiResponse(textOutput, newLoan.id);
+
+  } catch (err) {
+    console.error(
+      `[Gemini API] Failed/timed out for ${newLoan.id}. Falling back to friendly safe state.`,
+      err
+    );
+  }
+}
 
       // Friendly safe fallback in case Gemini is offline or fails as strictly requested
       if (!generatedReport) {
@@ -758,7 +765,7 @@ Keep the response professional, concise, and in exactly this labeled format with
       if (ai) {
         try {
           const response = await ai.models.generateContent({
-            model: 'gemini-3.5-flash',
+            model: "gemini-2.5-pro",
             contents: chatPrompt,
           });
           reply = response.text || "I apologize, I am processing high-volumes right now. Please repeat your question.";
